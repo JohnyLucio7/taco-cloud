@@ -1,7 +1,10 @@
-page: 49
+page: 54
 
 Next commit:
 
 [Part 1 - Foundational Spring] - 2 Developing web applications
 
-2.2 Processing form submission
+2.3 Validating form input
+	2.3.1 Declaring validation rules
+	2.3.2 Performing validation at form binding
+	2.3.3 Displaying validation errors
