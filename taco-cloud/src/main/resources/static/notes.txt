@@ -1,10 +1,7 @@
-page: 54
+page: 57
 
 Next commit:
 
 [Part 1 - Foundational Spring] - 2 Developing web applications
 
-2.3 Validating form input
-	2.3.1 Declaring validation rules
-	2.3.2 Performing validation at form binding
-	2.3.3 Displaying validation errors
+2.4 Working with view controllers
