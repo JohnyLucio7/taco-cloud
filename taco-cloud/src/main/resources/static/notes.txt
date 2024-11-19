@@ -1,11 +1,11 @@
-page: 85
+page: 93
 
 Next commit:
 
 [Part 1 - Foundational Spring] - 3 Working with data
 
-3.2 Working with Spring Data JDBC
-	3.2.1 Adding Spring Data JDBC to the build
-	3.2.2 Defining repository interfaces
-	3.2.3 Annotating the domain for persistence
-	3.2.4 Preloading data with CommandLineRunner
+3.3 Persisting data with Spring Data JPA
+	3.3.1 Adding Spring Data JPA to the project
+	3.3.2 Annotating the domain as entities
+	3.3.3 Declaring JPA repositories
+	3.3.4 Customizing repositories
