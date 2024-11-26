@@ -18,7 +18,6 @@ import jakarta.validation.Valid;
 import tacos.Ingredient;
 import tacos.Ingredient.Type;
 import tacos.TacoOrder;
-import tacos.TacoUDT;
 import tacos.Taco;
 import tacos.data.IngredientRepository;
 
@@ -68,7 +67,7 @@ public class DesignTacoController {
 			return "design";
 		}
 
-		tacoOrder.addTaco(new TacoUDT(taco.getName(), taco.getIngredients()));
+		tacoOrder.addTaco(taco);
 
 		return "redirect:/orders/current";
 	}
