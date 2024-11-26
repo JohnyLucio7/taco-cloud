@@ -18,6 +18,7 @@ import jakarta.validation.Valid;
 import tacos.Ingredient;
 import tacos.Ingredient.Type;
 import tacos.TacoOrder;
+import tacos.TacoUDT;
 import tacos.Taco;
 import tacos.data.IngredientRepository;
 
@@ -63,10 +64,11 @@ public class DesignTacoController {
 	public String processTaco(@Valid Taco taco, Errors errors, @ModelAttribute TacoOrder tacoOrder) {
 
 		if (errors.hasErrors()) {
+			errors.getAllErrors().forEach(error -> System.out.println(error.getDefaultMessage()));
 			return "design";
 		}
 
-		tacoOrder.addTaco(taco);
+		tacoOrder.addTaco(new TacoUDT(taco.getName(), taco.getIngredients()));
 
 		return "redirect:/orders/current";
 	}
