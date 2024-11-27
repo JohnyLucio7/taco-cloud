@@ -2,9 +2,25 @@ page: 113
 
 Next commit:
 
-[Part 1 - Foundational Spring] - 4 Working with nonrelational data
+[Part 1 - Foundational Spring] - 5 Securing Spring
 
-4.2 Writing MongoDB repositories
-	4.2.1 Enabling Spring Data MongoDB
-	4.2.2 Mapping domain types to documents
-	4.2.3 Writing MongoDB repository interfaces
+5.1 Enabling Spring Security
+	
+sudo docker run --name my-mongo -p 27017:27017 -d mongo:latest
+sudo docker exec -it my-mongo bash
+mongosh
+show dbs
+use tacoclouddb
+db.test.insertOne({name: "Exemplo de teste"})
+show dbs
+	
+db.createUser({
+  user: "tacoCloudUser",
+  pwd: "tacoCloudPwd",
+  roles: [
+    { 
+      role: "readWrite", 
+      db: "tacoclouddb" 
+    }
+  ]
+})
