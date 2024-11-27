@@ -4,7 +4,14 @@ Next commit:
 
 [Part 1 - Foundational Spring] - 5 Securing Spring
 
-5.1 Enabling Spring Security
+5.2 Configuring authentication
+	5.2.1 In-memory user details service
+	5.2.2 Customizing user authentication
+5.3 Securing web requests
+	5.3.1 Securing requests
+	5.3.2 Creating a custom login page
+	5.3.3 Enabling third-party authentication
+	5.3.4 Preventing cross-site request forgery
 	
 sudo docker run --name my-mongo -p 27017:27017 -d mongo:latest
 sudo docker exec -it my-mongo bash
